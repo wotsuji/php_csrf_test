@@ -1,0 +1,16 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<title></title>
+</head>
+<body>
+<br>
+（CSRF脆弱性がある状態）<br>
+<h1>CSRF：攻撃画面</h1>
+<a href="./2_action.php?txt=atk_password">攻撃リンク：トークなし</a><br>
+<br>
+<a href="./2_action.php?txt=atk_password&token=xxxx">攻撃リンク：トークン不一致</a><br>
+<br>
+※同じWEBサーバーから遷移するとリファラーは正常となる。<br>
+</body>
+</html>
